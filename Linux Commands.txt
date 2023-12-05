@@ -1,0 +1,108 @@
+Check file storage
+du -ah /home/bovacompounding/public_html/admin/shop/ | sort -n -r | head -n 10
+du -a /home/bovacompounding/public_html/admin/shop | sort -n -r | head -n 5
+du -Sh /home/bovacompounding/public_html/ | sort -rh | head -10
+du -Sh | sort -rh | head -10
+sudo du -a  /var/ | sort -rh | head -n 10
+sudo du -h /usr | sort -h -r | head -n 10
+
+//////////////////////////////////////////////////
+Install Apache2 on AWS
+1) sudo apt update
+2) sudo apt install apache2
+3) service apache2 status
+
+
+For Latest PHP
+-------------------
+Install PHP on AWS
+1) sudo apt install php libapache2-mod-php php-mysql
+2) php -v
+----------------
+For PHP 7.4
+1) sudo apt install software-properties-common
+2) sudo add-apt-repository ppa:ondrej/php -y
+3) sudo apt install php7.4
+4) sudo apt install php7.4-{cli,common,curl,zip,gd,mysql,xml,mbstring,json,intl}
+		sudo apt install php7.4-cli
+		sudo apt install php7.4-common
+		sudo apt install php7.4-curl
+		sudo apt install php7.4-zip
+		sudo apt install php7.4-gd
+		sudo apt install php7.4-mysql
+		sudo apt install php7.4-xml
+		sudo apt install php7.4-mbstring
+		sudo apt install php7.4-json
+		sudo apt install php7.4-intl
+5) sudo update-alternatives --config php (this is optional) 
+
+
+Install MySQL on AWS
+1) sudo apt update
+2) sudo apt install mysql-server
+3) service mysql status
+
+Setup Root user 
+- sudo mysql -uroot
+- flush privileges
+- USE mysql
+- ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Root@123';
+
+Create new Database for the project
+- SHOW DATABASES;
+- CREATE DATABASE db_name;
+
+Create DB specific user
+- CREATE USER 'tradeshake'@'localhost' IDENTIFIED WITH mysql_native_password BY 'tradeshake@123';
+
+Grant access to Specific Database to the above user
+- SHOW GRANTS FOR 'tradeshake'@'localhost'
+- GRANT ALL PRIVILEGES ON trade_shake.* TO 'tradeshake'@'localhost' WITH GRANT OPTION;
+- FLUSH PRIVILEGES;
+- REVOKE ALL PRIVILEGES ON tradeshake.* FROM 'tradeshake'@'localhost';
+
+
+////////////////////////////////////////////
+Block IP from accessing the server using IP tables
+
+iptables -A INPUT -s 91.241.19.199 -j DROP
+iptables -A OUTPUT -d 91.241.19.199 -j DROP
+N
+Block Subnet (Range of IP addresses) from accessing server
+
+To block 116.10.191.* addresses
+iptables -A OUTPUT -d 91.241.19.0/24 -j DROP
+iptables -A INPUT -s 91.241.19.0/24 -j DROP
+
+To block 116.10.*.* addresses
+iptables -A OUTPUT -d 61.177.0.0/16 -j DROP
+iptables -A INPUT -s 61.177.0.0/16 -j DROP
+
+To block 116.*.*.* addresses
+iptables -A OUTPUT -d 91.0.0.0/8 -j DROP
+iptables -A INPUT -s 91.0.0.0/8 -j DROP
+
+---------------------------------------------------------------
+---------------------------------------------------------------
+CREATE USER 'pms'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pms@123';
+SHOW GRANTS FOR 'pms'@'localhost';
+GRANT ALL PRIVILEGES ON ac5db.* TO 'pms'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+REVOKE ALL PRIVILEGES ON ac5db.* FROM 'pms'@'localhost';
+
+select * from mysql.user where user = 'root' and host = 'localhost';
+UPDATE user set `authentication_string` = PASSWORD('Root@123!') WHERE user = 'root' and host = 'localhost';
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'Root@123!';
+
+
+
+sudo du -Sh / | sort -rh | head -10
+sudo du -a  / | sort -rh | head -n 5
+sudo du -a  /var/ | sort -rh | head -n 10
+sudo du -Sh //var/www/html/var/ | sort -rh | head -10
+
+sudo systemctl restart apache2
+sudo systemctl status apache2
+sudo nano .ini path
+get .ini file path from phpinfo page open

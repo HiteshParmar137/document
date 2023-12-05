@@ -1,0 +1,16 @@
+for command line we need to go in below folde
+---------------------------------------------
+C:\Program Files\PostgreSQL\15\bin
+
+for  donwload database 
+-------------------------
+Export with data => pg_dump -U postgres -p 5432 -d cxpay-onboard -W -f D:\backup\cxpay-onboard-01-03.sql
+Export only db structure => pg_dump -U postgres -p 5432 -d cxpay-user -s -f D:\backup\cxpay-user-01-03.sql
+
+
+import database
+------------------------
+psql -U postgres -p 5432 -d cxpay-payauth < E:\cxpay\backup\2023-03-21\cxpay-payauth-20-03.sql
+
+
+pg_dump -U postgres -p 5432 -d cxpay-payauth -W -f D:\backup\cxpay-payauth-31-03.sql

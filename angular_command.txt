@@ -1,0 +1,34 @@
+ng serve
+ng g c user/userComponent -m user.module
+ng g module newModule
+ng g component newComponent
+ng g m views/cms --routing && ng g c views/cms -m=views/cms
+
+ng serve --port 4401
+
+ng build --configuration=production
+
+https://ckeditor.com/docs/ckeditor5/latest/features/code-blocks.html#installation
+
+npm uninstall --save @ckeditor/ckeditor5-code-block
+
+npm install --save angularx-social-login
+npm install -f angularx-social-login
+npm install angularx-social-login --force
+
+
+https://github.com/abacritt/angularx-social-login#sign-in-with-google
+https://www.itsolutionstuff.com/post/angular-14-server-side-pagination-tutorialexample.html
+https://www.positronx.io/angular-popup-notification-with-sweetalert2-example/
+
+composer create-project laravel/laravel laravel_push_notification
+
+https://web.archive.org/web/20210325170940/https://fancyapps.com/fancybox/3/docs/#inline
+
+--legacy-peer-deps
+
+shrusti_gjdvmqt_shah@tfbnw.net
+Hitesh@123
+
+7041188018
+HiteSH@#137

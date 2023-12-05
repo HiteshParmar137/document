@@ -1,0 +1,40 @@
+To manage an Angular 2+ build with a subfolder, you can follow these steps:
+
+Set the base href: Open the angular.json file in the root directory of your Angular project. Locate the projects > [your-project-name] > architect > build > options section. Add the baseHref property with the subfolder path as its value. For example, if your subfolder is named "subfolder", the configuration will look like this:
+
+json
+Copy code
+"options": {
+  "baseHref": "/subfolder/"
+}
+Build the application: Run the following command in your project's root directory to build the Angular application with the subfolder configuration:
+
+css
+Copy code
+ng build --prod
+Adjust server configuration: If you are deploying the application to a server, you need to configure the server to serve the Angular application from the subfolder. The specific steps depend on the server you are using. Here are some common scenarios:
+
+Apache: If you are using Apache HTTP Server, create an .htaccess file in the root directory of your server or the subfolder itself. Add the following content to the file:
+
+perl
+Copy code
+RewriteEngine On
+RewriteBase /subfolder/
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /subfolder/index.html [L]
+Nginx: If you are using Nginx, open the server configuration file (usually located in /etc/nginx/conf.d/default.conf or /etc/nginx/nginx.conf). Add the following location block inside the server block:
+
+bash
+Copy code
+location /subfolder/ {
+  try_files $uri $uri/ /subfolder/index.html;
+}
+Adjust the paths and subfolder name in the above configurations to match your setup.
+
+Deploy the build: After completing the above steps, deploy the built files to your server or hosting provider, ensuring they are placed within the subfolder specified in the configuration.
+
+When accessing the application, you should now use the URL that includes the subfolder. For example, if your domain is example.com and the subfolder is named "subfolder," you would access the application at example.com/subfolder/.
+
+Note: If you encounter any issues, consult the documentation or support resources for your specific server or hosting provider for further assistance.

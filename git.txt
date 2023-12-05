@@ -1,0 +1,104 @@
+Git New branche create
+git flow init
+if faceing this issue "Fatal: Local branch ' does not exist."
+	Branch name for "next release" development: [] staging
+click on enter button 
+git flow start develop
+git checkout develop
+git flow feature start admin_api_management
+git checkout feature/admin_api_management
+push code  on develop and feature breanch 
+
+git fetch --all
+
+GIT HUB STEPS
+git status
+You must in master branch
+
+if you are in master branch
+then
+1. git fetch && git checkout develop
+2. git flow init
+3. git flow feature start BRANCHNAME ( as described in xcel sheet - Ayushi)
+
+After the complete task
+4. git status
+5. git add .
+6. git commit -m "MESSAGE" (In message must have branch name)
+7. git push origin feature/BRANCHNAME
+
+For new task
+1. git checkout develop
+2. git pull origin develop
+3. git flow feature start BRANCHNAME		
+
+Follow steps to merge branch to develop branch
+git status (you must be feature branch)
+git add .
+git commit -m "MESSAGE"
+git push origin feature/BRANCHNAME
+
+git checkout develop
+git status (you must be in develop branch)
+git pull origin develop
+git pull origin feature/BRANCHNAME
+You can see the merge files. Also can check if files are conflict. So before merge remove conflict if there
+
+git add .
+git commit -m "MESSAGE - BRANCH NAME"
+git push origin develop
+
+============================================================
+
+//When you get new clone (Remote origin branch update in local)
+git fetch --all
+
+//Check branch
+git branch
+
+//Create new branch
+git checkout -b <<branch name>>
+
+//Checkout branch // Branch switching
+git checkout <<branch name>>
+
+//Merge branch
+git merge <<branch name>>
+
+
+git status
+
+//For all files add to commit
+git add . 
+
+// For single files
+git add <<filename with path>>
+
+
+//For commit
+git commit -m "Message here"
+
+
+//Push the code 
+git push origin <<branch name>>
+git push -u origin  <<branch name>>
+
+//////////On server////////////// 
+//Get the updated source 
+git pull
+
+merge exit
+esc + :wq
+
+Discarding All Local Changes
+----------------------------------
+If you want to undo all of your current changes, you can use the git restore command with the "." parameter (instead of specifying a file path):
+git restore .
+
+
+
+git config user.name "HiteshParmar137"
+git config user.email "hitesh.parmar.137@gmail.com"
+
+git remote set-url origin https://github.com-HiteshParmar137/Ankit.git
+git remote set-url origin https://HiteshParmar137@github.com/HiteshParmar137/Ankit1.git

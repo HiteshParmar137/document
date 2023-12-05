@@ -1,0 +1,15 @@
+sudo systemctl start docker
+
+Docker Login
+Email: hitesh.p@communicationcrafts.com
+UserName: hitesh137
+Pass: Hitesh@#123
+
+check windows vertion
+   Press Win + R to open the Run dialog.
+   Type "winver" and press Enter.
+
+Type the following command to view a list of available WSL distros to install on Windows 10 and press Enter:
+   wsl --list --online
+Type the following command to install the WSL with a specific distro on Windows 10 and press Enter:
+   wsl --install -d DISTRO-NAME

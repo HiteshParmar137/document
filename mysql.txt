@@ -1,0 +1,18 @@
+mysqldump -u username -p database_name > database_name.sql
+
+mysql -u username -p database_name < database_name.sql
+
+mysql -u root-p promostaffing < E:\Projects\promostaffing\danbhai\promosta_wphtw.sql
+
+mysql -u root-p succeedin_live < E:\Projects\succeedin\Backup\database\succeedin_live_06_11_23.sql
+
+
+open cmd using xampp cpanel shell
+or 
+xampp5.6\mysql\bin
+
+
+mysql -u root -p
+
+use database_name
+source file_path

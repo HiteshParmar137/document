@@ -1,0 +1,43 @@
+Install rdkafka for PHP
+1. Copy librdkafka.dll to php folder inside wamp server (D:\wamp\bin\php\php8.1.15)
+2. Add extension=php_rdkafka.dll to php.ini
+
+Copy kafka folder to your system
+Start the Kafka Environment
+	1. Open command line
+	2. Go to the kafka directory
+	3. First start Zookeeper server
+		Run command: 
+		a) set KAFKA_OPTS=-Djava.security.auth.login.config=./config/kafka_server_jaas.conf
+		b) .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+		Verify Zookeeper server is running or not. Check port 2181
+    4. Start Kafka server
+		Run command: 
+		a) set KAFKA_OPTS=-Djava.security.auth.login.config=./config/kafka_server_jaas.conf
+		b) .\bin\windows\kafka-server-start.bat .\config\server.properties
+		Verify Kafka server is running or not. Check port 9092
+	
+Create topic 
+	1. Open command line
+	2. Go to the kafka directory
+	3. Run Command: 
+		a) .\bin\windows\kafka-topics.bat --create --topic test-topic-02-03  --bootstrap-server SASL_PLAINTEXT://localhost:9092 --command-config=.\config\config.properties
+		test-topic-02-03 is topic name and localhost:9092 is point to Kafka server
+
+List topics created
+	1. Open command line
+	2. Go to the kafka directory
+	3. Run command
+		a) .\bin\windows\kafka-topics.bat --bootstrap-server SASL_PLAINTEXT://localhost:9092  --list --command-config=.\config\config.properties
+Delete topics 
+	.\bin\windows\kafka-topics.bat --bootstrap-server [SASL_PLAINTEXT://localhost:9092] --delete --topic test-topic-02-03
+
+.\bin\windows\zookeeper-shell.bat localhost:2181 ls /brokers/ids
+
+4. Create Event
+	4. Run Command: .\bin\windows\kafka-console-producer.bat --topic inventories --bootstrap-server localhost:9092
+		After the run above command, it will allow create event
+
+5. Read Event
+	5. Run Command: .\bin\windows\kafka-console-consumer.bat --topic test-topic --from-beginning --bootstrap-server localhost:9092
+		--from-beginning is to listen the event from beginning

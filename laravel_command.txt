@@ -1,0 +1,9 @@
+php artisan make:migration add_is_email_verified_and_verify_token_and_is_signup_completed_to_users_table --table=users
+
+php artisan migrate --path=/database/migrations/2022_12_06_145308_add_is_email_verified_and_verify_token_and_is_signup_completed_to_users_table.php
+
+php artisan migrate:rollback --path=/database/migrations/2022_12_06_101541_add_is_email_verified_and_verify_token_to_users_table.php
+
+composer require cybersource/rest-client-php --with-all-dependencies
+
+composer install --ignore-platform-reqs

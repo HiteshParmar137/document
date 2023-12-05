@@ -1,0 +1,441 @@
+=================== Company Gmail Credential ======================
+cctdigi15@gmail.com
+tehsil1234
+=================== End Gmail Credential ==========================
+=================== firebase push notification credential =========
+user : cctmobiledev@gmail.com
+pass : CcDev@789
+
+=================== firebase push notification credential =========
+
+Host:smtp.office365.com
+Port:587
+UserName:bharatdan.g@communicationcrafts.com
+password:cct@2020
+
+=================== Tradeshak ============================
+BITBUCKET PASSWORD
+======================
+
+UserName : kinjal.m@communicationcrafts.com
+
+Password : zk9vSYLxYWRH 
+
+App Password: 8YGFzSUtDU4Yk9VmH9KW
+
+
+http://ec2-13-233-162-235.ap-south-1.compute.amazonaws.com/public
+
+trade_user1@yopmail.com
+123456
+
+krupali.test@yopmail.com
+123456
+
+
+###> Database Configuration variables ###
+DB_NAME=trade_shake
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USER=tradeshake
+DB_PASSWORD=tradeshake@123
+DB_VERSION=8.0.29-0ubuntu0.22.04.2
+
+http://ec2-13-233-162-235.ap-south-1.compute.amazonaws.com/public/adminer.php
+
+
+
+ip : 13.233.162.235
+host : ec2-13-233-162-235.ap-south-1.compute.amazonaws.com
+username : ubuntu
+keyfile : D:\OneDrive - CCT Digisol Pvt Ltd\Projects\TRADE-SHAKE\PPK\TradeShakeStaging.ppk
+
+
+(feature/api-dev)
+composer install --ignore-platform-reqs
+php bin/console cache:pool:clear cache.global_clearer
+
+php bin/console make:migration
+php bin/console doctrine:migrations:migrate
+php bin/console server:dump
+
+
+https://www.getpostman.com/collections/0d7b4e5b73f924e6958a
+
+========================= end Tradeshak =============================
+
+================ Git Command ========================================
+
+git pull origin develop
+git push origin feature/api-dev
+git push origin feature/account-address
+
+git flow init 
+git flow feature start basic-system-understand
+
+git stash
+
+Open your terminal and navigate to your git repository.
+Change Git user name by running: git config user.name “Your Name”
+Change Git user email by running: git config user.email “name@email.com"
+
+git reset
+
+git config –list.
+================= end git command ===================================
+
+
+=====================================================================
+Jayeshhbhai Cradential Details
+
+bharatdan.g@communicationcrafts.com
+
+password for pull request : bharat123
+password for pull request : jeCxXv7PmW5K
+app Password : GNBA5mDU7NzCsQp6wTr2
+
+Command to create porject
+============================							
+User: craft
+Password: Bes2?T<~J-S3<3xK
+
+======== Jayeshhbhai Cradential End ==========================
+======== edwardwilliam.com ===================================
+--------------- setup process -------------
+
+Need 7.3,7.4 php verstion
+composr 1
+command for downgrad composer
+composer self-update --1
+folder-name/public_html/?setupenv
+
+------------ end setup process-------------
+
+Command to create porject
+============================							
+User: craft
+Password: Bes2?T<~J-S3<3xK
+
+http://localhost/edwardwilliam.com/public_html/cms-area
+Admin Credential
+username: piranha
+password: admin
+
+======== end edwardwilliam.com ===================================
+
+
+============== laravel command =================================
+public_html/?setupenv
+php artisan cache:clear
+php artisan up
+
+php artisan cache:clear
+php artisan view:clear
+php artisan route:clear
+php artisan config:cache
+
+============== end laravel command ============================
+
+============== composer command ===============================
+- command for downgrad composer
+composer self-update --1
+ 
+=================== Walkmytrail Staging =======================
+
+Host : 185.53.59.177
+Username : somersettrailste
+Port: 722
+Password : bharatdan@123
+
+somersettrailste@185.53.59.177
+
+cPanel Access
+host.aztec.media:2083
+somersettrailste
+K~lYvsgCREyr
+Use directory public_html
+
+
+admin@admin.com
+WalkingTrail9@!!
+
+
+$2y$10$/RWMcjXD7/waWwgVteUXVu3IBR2U06cGsh0QGDSepNnoxiZROWA06
+
+$2y$10$ufT27wYcnfKXSnYWL1K1YOEUh2VLPIAoaOtqaeDGYl5pueALd09qa
+
+
+=================== End Walkmytrail Staging =======================
+
+
+=================== academymanagerpro.com Staging =======================
+code Uploaded by:angle
+designer: chris
+checked by :paul
+Branch Name: feature/platform-feedback-changes-level-5
+
+Main Admin credential
+username: admin
+password:admin
+
+Admin credential
+username:jayesh
+Pass:test123%
+
+Player Details
+username:AddanBrown
+pass:123456789
+
+--------- staging server details
+
+FTP Credential
+Host:c104356.sgvps.net
+
+User Name : jayesh@piranhad103.sg-host.com
+
+Pass: m313+3^qc2sq
+
+Encription: Only use plain FTP
+
+http://piranhad103.sg-host.com/
+user Name: jayesh
+Pass: test123%
+
+Player Details
+abrown
+abrown123%
+
+email file change
+/piranhad103.sg-host.com/Framework/Controllers/Internal/AppController.php
+
+
+
+=================== End academymanagerpro.com Staging =======================
+
+
+
+=================== vanessamccallumestates Staging =======================
+\\192.168.1.16
+
+
+	URL - http://203.109.113.162:6868/tfsites/
+	username - TwoFreshDev
+	password - yljWQojs@0zmx
+
+CCTDIGISOL\Hetal.d
+1234
+
+FTP
+-----------------------------
+Host:     ftp.twofresh.co.uk
+Login:    login@tfsites.co.uk         
+Pass:      $;?I5hK[#p;R
+ 
+
+WordPress
+------------------------------
+https://tfsites.co.uk/wp-admin/
+User:     TwoFreshDev
+Pass:      yljWQojs@0zmx 
+
+CPanel
+-------------------------------
+https://www.twofresh.co.uk:2083
+user:      twofresh
+pass:      k1lL@]?iUm4i
+(tfsites.co.uk)
+
+
+Log In ‹ Vanessa McCallum Estates — WordPress
+https://tfsites.co.uk
+
+=================== End vanessamccallumestates Staging =======================
+
+=================== ChildrencarePrograme Staging =============================
+
+Branch Name : feature/forms_pdf_correction_batch_4
+
+----------------- stagging details -----------------
+
+https://piranhahosted.com:8080/childrenscareprogram.careagency.gov.gi/teams
+User : admin
+Pass : admin
+
+piranha
+john1734%7
+
+username: admin, email: web+admin@pdg.gi 
+username: manager, email: web+manager@pdg.gi
+username: socialworker, email: web+sw@pdg.gi
+username: jcpiranha, email: ezekiel+swFDSAD@pdg.gi
+username: Piranhatest, email: piranhatest3@piranha.com
+username: pdg, email: ezekiel+SDSDsw@pdg.gi
+username: test, email: ezekiel+hjgjdhsg@pdg.gi
+username: testadmin, email: web+sdsdas@pdg.gi
+username: piranhauser1, email: piranhatest1@piranha.com
+username: piranhauser2, email: piranhatest2@piranha.com
+
+----------------- end stagging details -----------------
+1) only form created user can edit form - social worker
+2) all managers have authority to change form
+
+main Table
+ - admin_user
+ - service_user
+ - service_user_carer
+ 
+ 
+
+=================== End ChildrencarePrograme Staging =========================
+
+=================== CDS Staging ============================
+Branch Name: feature/admin-pagination-issue-fixes
+repository: PiranhaDesigns/Websites
+
+URL: cdspost.gi
+
+Username: admin
+
+Password: 5Post123%7
+
+
+API_TOKEN=c13c2e68-f1fa-4acd-99b1-502f70b0c6c2
+UPU_MAIN_URL=https://www.cds.post/CDS.API
+
+
+https://idqvqk.api.post/2022SP1/#operation/CheckItemStatus
+
+php artisan cdsapicall
+
+https://www.cds.post/CDS.api/
+
+https://www.cds.post/CDS.API/CDSAPIService.svc?wsdl
+install soapui software
+click SOAP
+project name 
+Initial WSDL:https://www.cds.post/CDS.API/CDSAPIService.svc?wsdl
+
+=================== End CDS Staging =============================
+
+
+academymanagerpro.com
+cds.gi
+childrenscareprogram.careagency.gov.gi
+admin.gov.gi
+edwardwilliam.com
+
+
+
+
+==================== Start Yoocasta =====================================
+FTP:
+148.66.142.37
+developer@yoocasta.com
+Whiskeypuppy
+
+Login:
+casting@yoocasta.com
+Mashael1306
+
+BITBUCKET PASSWORD
+======================
+UserName : kinjal.m@communicationcrafts.com
+Password :   
+App Password: 8YGFzSUtDU4Yk9VmH9KW
+
+
+https://test.yoocasta.com/adminer.php
+
+u: yoocasta_yoocast
+p : Kt;Cz0QqnVBc
+test mate : yoocasta_test
+Live one: 	yoocasta_yoocasta	
+DB Name : yoocasta_yoocasta
+
+
+u: support@yoocasta.com
+p: Support
+==================== End Start Yoocasta =====================================
+sql data transfer:HeidieSQL
+
+
+======================= kambi Start =====================================
+Host : 82.163.78.23
+Username : dev747
+Password : lvKP6td4s%GapnMjjQEkN
+windows+ r =>mstsc
+
+Host : 82.163.78.23
+Username : dev735
+Password : FWLjpHT0qVlQ%$tbVymKFr
+
+
+C:\Users\Jayesh Bhuva\OneDrive - CCT Digisol Pvt Ltd (1)\kambi\documet
+
+======================= kambi End =====================================
+
+============= Stripe Credential ===========
+User Name= hitesh.p@communicationcrafts.com
+Pass: Hitesh@#137
+Account Id: acct_1M90lLSFrJko0kyy
+
+============= End Stripe Credential ===========
+
+
+================ promostaffing =================
+
+https://dev.promostaffing.net/browse-events/
+
+Manager Login
+
+u : cctdigi1@gmail.com
+P : cctdigi1@gmail.com
+
+
+https://dev.promostaffing.net/roster-generator/?eventID=5038	
+
+FileZila
+
+Host: ftp.promostaffing.net
+
+username : ccraft@dev.promostaffing.net
+password : }fUacWTfVaZk
+
+User Plain FTP
+=============== end promostaffing =================
+
+
+Bitbucket credential
+User Name: hitesh.p@communicationcrafts.com
+Pass: hitesh@123
+
+
+
+********AWS Credentials*************
+Link : https://signin.aws.amazon.com/signin
+Username : faruk@peoplactive.com
+Password : Cctech@123!.
+
+
+--------------------- Start Pratik Bitbucket ------------------
+email :- pratik.m@communicationcrafts.com
+password :- pratik.m@123
+userName :- pratikmakwana
+App PASSWORD :- KetYNXGvmLZ63YzvXpdY
+
+-------------------- End ---------------------------------
+------------------ Start Gmail Credential ----------------
+
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=hitesh.parmar.137@gmail.com
+MAIL_PASSWORD=vjlbvfezcnpalawm
+MAIL_ENCRYPTION=tls
+
+----------------- End Gmail Credential --------------------
+
+----------------- start mantis.communicationcrafts ----------
+hitesh.p@communicationcrafts.com
+Hitesh@#137
+---------------- End mantis.communicationcrafts -------------
