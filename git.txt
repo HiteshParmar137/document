@@ -95,10 +95,12 @@ Discarding All Local Changes
 If you want to undo all of your current changes, you can use the git restore command with the "." parameter (instead of specifying a file path):
 git restore .
 
-
-
+-------------------------------------------------------------
+for this error please aply below step "remote: Permission to HiteshParmar137/document.git denied to hitesh-cct."
 git config user.name "HiteshParmar137"
 git config user.email "hitesh.parmar.137@gmail.com"
 
-git remote set-url origin https://github.com-HiteshParmar137/Ankit.git
 git remote set-url origin https://HiteshParmar137@github.com/HiteshParmar137/Ankit1.git
+git remote set-url origin https://HiteshParmar137@github.com/HiteshParmar137/ubuntu360.git
+git remote set-url origin https://HiteshParmar137@github.com/HiteshParmar137/document.git
+------------------------------------------------------------------------------------------
